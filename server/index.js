@@ -10,7 +10,7 @@ const messagesRoutes = require("./routes/messages");
 const { loginRequired  ,  ensureCorrectUser }  = require("./middleware/auth");
 const db = require("./models")
 
-const PORT = 8081;
+const PORT = process.env.PORT || 8081;
 
 
 // app config
